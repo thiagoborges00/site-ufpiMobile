@@ -1,0 +1,125 @@
+		<!DOCTYPE html>
+		<html>
+			<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width">
+			<title>Cadastro do calendário</title>
+			<style>
+				body{
+					background-color:#11a6ad;
+					}
+
+				form{
+				width:800px;
+				margin:auto;
+
+					}
+
+				label{
+				display:inline-block;
+				font-size:0.9em;
+				font-weight:bold;
+				width:160px;
+					}
+					
+				input{
+				display:inline-block;
+				width:80px;
+				background-color:#92b7;
+				height:26px;
+				margin: 14px auto 0px;
+				padding:3px;
+				border-radius:8px;
+				opacity:0.5;
+			
+						}
+
+				#nCalendario{
+					display:inline-block;
+					width:600px;
+					background-color:white;
+				}
+				legend{
+				
+					padding:15px;
+					
+					}
+					
+				#Calendario{
+					width:770px;
+				}
+				
+				#textIni{
+				text-align:center;
+				font:bold 20px sans-serif;
+				
+						}
+
+				
+			  
+
+				#button{
+				  width:200px;
+				  margin-top:50px;
+				  margin-left:500px;
+				  padding:5px 35px;
+				  border-radius:20px;
+				  font:bold 12px sans-serif;	
+				  border:1px solid #9eb9c3;
+				  color:"black";
+				  box-shadow:0px 0px 10px;
+						}
+				
+				#button:hover{
+				  background-color:lightgreen;
+				  cursor:pointer;
+							 }
+				
+			
+			
+		  </style>
+		</head>
+		<body>
+			<p id="textIni">Cadastro do  calendário</p>
+			<form method = "post" action="">
+				<fieldset id= "Calendario">
+				
+					<legend id="leg-cal">Calendario</legend>
+					<p><label id="labelName">Título  do Calendario:</label><input type= "text" name="nomeEv" id="nCalendario" placeholder=" 2018"/></p>
+					
+					<fieldset id="fieldset-ano">
+						<legend id="legd-ano">Ano:</legend>
+						<input type="radio" id="radio17" name="r17"/><label for=radio17>2017</label>
+						<input type="radio" id="radio18" name="r17"/><label for=radio18>2018</label>
+						<input type="radio" id="radio19" name="r17"/><label for=radio19>2019</label>
+						<input type="radio" id="radio20" name="r17"/><label for=radio20>2020</label>
+						<input type="radio" id="radio21" name="r17"/><label for=radio21>2021</label>
+					</fieldset>
+				
+					<fieldset id="fieldset-tipo">
+						<legend id="leg-tipo">Tipo</legend>
+						<input type="radio" id="radio-grad" name="radioTipo"/><label for="radio-grad">GRADUAÇÂO</label>
+						<input type="radio" id="radio-pos" name="radioTipo"/><label for="radio-pos">PÓS GRADUAÇÂO</label>
+						<input type="radio" id="radio-ctt" name="radioTipo"/><label for="radio-ctt">CTT</label>
+						<input type="radio" id="radio-ead" name="radioTipo"/><label for="radio-ead">EAD</label>
+						<input type="radio" id="radio-ledoc" name="radioTipo"/><label for="radio-ledoc">LEDOC</label>
+						<input type="radio" id="radio-parfor" name="radioTipo"/><label for="radio-parfor">PARFOR</label>
+					</fieldset>
+					
+					<fieldset id="fieldset-campus">
+						<legend id="leg-campus">Campus</legend>
+						<input type="radio" id="c-bomj" name="campus"/><label for ="c-bomj">BOM JESUS</label>
+						<input type="radio" id="c-floriano" name="campus"/><label for ="c-floriano">FLORIANO</label>
+						<input type="radio" id="c-parnaiba" name="campus"/><label for ="c-parnaiba">PARNAIBA</label>
+						<input type="radio" id="c-picos" name="campus"/><label for ="c-picos">PICOS</label>
+						<input type="radio" id="c-teresina" name="campus"/><label for ="c-teresina">TERESINA</label>
+					
+					</fieldset>
+				
+				</fieldset>
+			
+				<input type="submit" value="Cadastrar" id="button"/>
+				
+			</form>
+		</body>
+	</html>

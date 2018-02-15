@@ -12,6 +12,14 @@
 		form{
 		width:800px;
 		margin:auto;
+
+}
+
+		label{
+		display:inline-block;
+		font-size:0.9em;
+		font-weight:bold;
+		width:130px;
 }
 		input{
 		display:inline-block;
@@ -63,10 +71,10 @@
 		<form method = "post" action="">
 			<fieldset id= "evento">
 				<legend>Evento</legend>
-				<p>Nome  do Evento:<input type= "text" name="nomeEv" id="nEvento" placeholder="Eripi 2018"/></p>
-				<p>Local do Evento:<input type="text" name="localEv" id="lEvento"placeholder="Caixa prego"/></p>
-				<p>Data  do Evento:<input/type="date" name="dataEv" id="dEvento"></p>
-				<p>Hora  do Evento:<input type="time" name="horaEv" id="hEvento"/></p>
+				<p><label id="labelName">Nome  do Evento:</label><input type= "text" name="nomeEv" id="nEvento" placeholder="Eripi 2018"/></p>
+				<p><label id="labelLocal">Local do Evento:</label><input type="text" name="localEv" id="lEvento"placeholder="Caixa prego"/></p>
+				<p><label id="labelData">Data  do Evento:</label><input/type="date" name="dataEv" id="dEvento"></p>
+				<p><label id="labelHora">Hora  do Evento:</label><input type="time" name="horaEv" id="hEvento"/></p>
 			</fieldset>
 			<input type="submit" value="Cadastrar" id="button"/>
 			
