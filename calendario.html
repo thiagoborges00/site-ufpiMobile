@@ -87,14 +87,19 @@
 					<legend id="leg-cal">Calendario</legend>
 					<p><label id="labelName">Título  do Calendario:</label><input type= "text" name="nomeEv" id="nCalendario" placeholder=" 2018"/></p>
 					
-					<fieldset id="fieldset-ano">
-						<legend id="legd-ano">Ano:</legend>
-						<input type="radio" id="radio17" name="r17"/><label for=radio17>2017</label>
-						<input type="radio" id="radio18" name="r17"/><label for=radio18>2018</label>
-						<input type="radio" id="radio19" name="r17"/><label for=radio19>2019</label>
-						<input type="radio" id="radio20" name="r17"/><label for=radio20>2020</label>
-						<input type="radio" id="radio21" name="r17"/><label for=radio21>2021</label>
-					</fieldset>
+					<p>
+						<label id ="lAno">Ano </label>
+						<select id="sdia" name="select-ano">
+							<option value ="2017">2017</option>
+							<option value="2018">2018</option>
+							<option value="2019">2019</option>
+							<option value="2020">2020</option>
+							<option value="2021">2021</option>
+							
+						</select>
+					</p>
+					
+					
 				
 					<fieldset id="fieldset-tipo">
 						<legend id="leg-tipo">Tipo</legend>
@@ -114,6 +119,26 @@
 						<input type="radio" id="c-picos" name="campus"/><label for ="c-picos">PICOS</label>
 						<input type="radio" id="c-teresina" name="campus"/><label for ="c-teresina">TERESINA</label>
 					
+					</fieldset>
+					
+					<fieldset>
+						<legend id ="leg-event">Eventos</legend>
+						<p>
+							<label id="label-titulo">Título</label>
+							<input id=" e-titulo" name="tituloevento" type="text" placeholder="Calourada Unificada 2018"/>
+						</p>
+						
+						<p>
+							<label id="label-datain">Data de ínicio</label>
+							<input id="e-datain" name="datainicio" type="date" />
+						</p>
+						
+						<p>
+							<label id="label-datafim">Data de fim</label>
+							<input id="e-datafim" name="datafim" type="date" />
+							<br>
+						</p>
+						
 					</fieldset>
 				
 				</fieldset>

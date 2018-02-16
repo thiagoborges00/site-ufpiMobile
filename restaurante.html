@@ -11,27 +11,29 @@
 	  </style>
 	</head>
 	<body>
-		<p id="testIni">Cadastro do restaurante</p>
+		<p>
+			<label id="labelinicial">Cadastro do restaurante</label>
+		</p>
 		<form id ="form" method = "post" action="">
 			
 			<p>
-				<label id="lcampus">RU</label>
+				<label id="lcampus" for="select-campus">RU</label>
 				<select id="select-campus" name ="sru">
 						<option value="CCN">RU 1 CCN</option>
-						<option value="BIB">RU 2 BIBLIOTECA</option>
+						<option value="BIBLIOTECA">RU 2 BIBLIOTECA</option>
 						<option value="CCA">RU 3 CCA</option>
 				</select>
 			</p>
 			
 			<p>
-				<label id="ldia">Dia</label>
+				<label id="ldia" for "select-dia">Dia</label>
 				<select id="select-dia" name ="sdia">
-					<option value="SG">SEGUNDA-FEIRA</option>
-					<option value="TC">TERÇA-FEIRA</option>
-					<option value="QA">QUARTA-FEIRA</option>
-					<option value="QI">QUINTA-FEIRA</option>
-					<option value="SX">SEXTA-FEIRA</option>
-					<option value="SA">SÁBADO</option>
+					<option value="segunda">SEGUNDA-FEIRA</option>
+					<option value="terca">TERÇA-FEIRA</option>
+					<option value="quarta">QUARTA-FEIRA</option>
+					<option value="quinta">QUINTA-FEIRA</option>
+					<option value="sexta">SEXTA-FEIRA</option>
+					<option value="sabado">SÁBADO</option>
 					
 				</select>
 			</p>
@@ -54,32 +56,32 @@
 			
 			
 			<p>
-				<label id="lsalada">Salada </label>
+				<label id="lsalada" for="input-salada">Salada </label>
 				<input id="input-salada" name= "salada" type="text" placeholder="Salada verde">
 			</p>
 			
 			<p>
-				<label id="lpratoprinc">Prato principal </label>
+				<label id="lpratoprinc" for ="input-prprincipal">Prato principal </label>
 				<input id="input-prprincipal" name= "prato-principal" type="text" placeholder="Lasanha">
 			</p>
 			
 			<p>
-				<label id="lguarnicao">Guarnição </label>
+				<label id="lguarnicao" for ="input-guarnicao">Guarnição </label>
 				<input id="input-guarnicao" name= "guarnicao" type="text" placeholder="Farofa">
 			</p>
 			
 			<p>
-				<label id="lacompanhamento">Acompanhamento </label>
+				<label id="lacompanhamento" for="input-acomp">Acompanhamento </label>
 				<input id="input-acomp" name= "acompanhamento" type="text" placeholder="Arroz e feijão">
 			</p>
 			
 			<p>
-				<label id="lsobremesa">Sobremesa </label>
-				<input id="input-salada" name= "salada" type="text" placeholder="Doce">
+				<label id="lsobremesa" for ="input-sobremesa">Sobremesa </label>
+				<input id="input-sobremesa" name= "sobremesa" type="text" placeholder="Doce">
 			</p>
 			
 			<p>
-				<label id="lsobremesa">Suco </label>
+				<label id="lsobremesa" for ="input-suco">Suco </label>
 				<input id="input-suco" name= "suco" type="text" placeholder="Suco de laranja">
 			</p>
 			
