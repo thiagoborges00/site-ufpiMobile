@@ -1,0 +1,92 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width">
+	  <title>Cadastro do restaurante</title>
+	  <style>
+	  
+		
+		
+	  </style>
+	</head>
+	<body>
+		<p id="testIni">Cadastro do restaurante</p>
+		<form id ="form" method = "post" action="">
+			
+			<p>
+				<label id="lcampus">RU</label>
+				<select id="select-campus" name ="sru">
+						<option value="CCN">RU 1 CCN</option>
+						<option value="BIB">RU 2 BIBLIOTECA</option>
+						<option value="CCA">RU 3 CCA</option>
+				</select>
+			</p>
+			
+			<p>
+				<label id="ldia">Dia</label>
+				<select id="select-dia" name ="sdia">
+					<option value="SG">SEGUNDA-FEIRA</option>
+					<option value="TC">TERÇA-FEIRA</option>
+					<option value="QA">QUARTA-FEIRA</option>
+					<option value="QI">QUINTA-FEIRA</option>
+					<option value="SX">SEXTA-FEIRA</option>
+					<option value="SA">SÁBADO</option>
+					
+				</select>
+			</p>
+			
+			<fieldset id="fieldset-refeicao">
+						<legend id="leg-campus">Refeição</legend>
+						<input type="radio" id="ralmoco" name="refeicao"/><label for ="ralmoco">ALMOÇO</label><br>
+						<input type="radio" id="rjanta" name="refeicao"/><label for ="rjanta">JANTA</label>
+					
+			</fieldset>
+			
+			
+			
+			<fieldset id="fieldset-tipo">
+						<legend id="leg-campus">Tipo</legend>
+						<input type="radio" id="rnormal" name="tipo-refeicao"/><label for ="rnormal">NORMAL</label><br>
+						<input type="radio" id="r-vegano" name="tipo-refeicao"/><label for ="r-vegano">VEGETARIANO</label>
+					
+			</fieldset>
+			
+			
+			<p>
+				<label id="lsalada">Salada </label>
+				<input id="input-salada" name= "salada" type="text" placeholder="Salada verde">
+			</p>
+			
+			<p>
+				<label id="lpratoprinc">Prato principal </label>
+				<input id="input-prprincipal" name= "prato-principal" type="text" placeholder="Lasanha">
+			</p>
+			
+			<p>
+				<label id="lguarnicao">Guarnição </label>
+				<input id="input-guarnicao" name= "guarnicao" type="text" placeholder="Farofa">
+			</p>
+			
+			<p>
+				<label id="lacompanhamento">Acompanhamento </label>
+				<input id="input-acomp" name= "acompanhamento" type="text" placeholder="Arroz e feijão">
+			</p>
+			
+			<p>
+				<label id="lsobremesa">Sobremesa </label>
+				<input id="input-salada" name= "salada" type="text" placeholder="Doce">
+			</p>
+			
+			<p>
+				<label id="lsobremesa">Suco </label>
+				<input id="input-suco" name= "suco" type="text" placeholder="Suco de laranja">
+			</p>
+			
+			<input type="submit" value="Cadastrar" id="button"/>
+			
+			
+			
+		</form>
+	</body>
+	</html>
