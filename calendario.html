@@ -22,9 +22,9 @@
 				width:160px;
 					}
 					
-				input{
+				input,select{
 				display:inline-block;
-				width:80px;
+				width:300px;
 				background-color:#92b7;
 				height:26px;
 				margin: 14px auto 0px;
@@ -59,17 +59,36 @@
 			  
 
 				#button{
-				  width:200px;
-				  margin-top:50px;
-				  margin-left:500px;
+				  float:right;
+				  width:120px;
+				  
 				  padding:5px 35px;
 				  border-radius:20px;
 				  font:bold 12px sans-serif;	
 				  border:1px solid #9eb9c3;
 				  color:"black";
 				  box-shadow:0px 0px 10px;
+				  background-color:gray;
 						}
+						
+						
+				#button-sair{
+				  float:left;
+				  width:100px;
+				  border-radius:20px;
+				  font:bold 12px sans-serif;	
+				  border:1px solid #9eb9c3;
+				  color:"black";
+				  box-shadow:0px 0px 10px;
+				  background-color:gray;
+				  margin-bottom:20px;
+						}
+						
 				
+				#button-sair:hover{
+				  background-color:lightgreen;
+				  cursor:pointer;
+							 }
 				#button:hover{
 				  background-color:lightgreen;
 				  cursor:pointer;
@@ -84,12 +103,12 @@
 			<form method = "post" action="">
 				<fieldset id= "Calendario">
 				
-					<legend id="leg-cal">Calendario</legend>
+					<legend id="leg-cal">Informações do Calendario</legend>
 					<p><label id="labelName">Título  do Calendario:</label><input type= "text" name="nomeEv" id="nCalendario" placeholder=" 2018"/></p>
 					
 					<p>
 						<label id ="lAno">Ano </label>
-						<select id="sdia" name="select-ano">
+						<select id="s-dia" name="select-ano">
 							<option value ="2017">2017</option>
 							<option value="2018">2018</option>
 							<option value="2019">2019</option>
@@ -100,26 +119,30 @@
 					</p>
 					
 					
+					<p>
+						<label id="label-tipo">Tipo</label>
+						<select id="s-tipo" name="select-tipo">
+							<option value="GRADUAÇÂO">GRADUAÇÂO</option>
+							<option value="PÓS GRADUAÇÂO">PÓS GRADUAÇÂO</option>
+							<option value="CTT">CTT</option>
+							<option value="EAD">EAD</option>
+							<option value="LEDOC">LEDOC</option>
+							<option value="PARFOR">PARFOR</option>
+						</select>
+					</p>
 				
-					<fieldset id="fieldset-tipo">
-						<legend id="leg-tipo">Tipo</legend>
-						<input type="radio" id="radio-grad" name="radioTipo"/><label for="radio-grad">GRADUAÇÂO</label>
-						<input type="radio" id="radio-pos" name="radioTipo"/><label for="radio-pos">PÓS GRADUAÇÂO</label>
-						<input type="radio" id="radio-ctt" name="radioTipo"/><label for="radio-ctt">CTT</label>
-						<input type="radio" id="radio-ead" name="radioTipo"/><label for="radio-ead">EAD</label>
-						<input type="radio" id="radio-ledoc" name="radioTipo"/><label for="radio-ledoc">LEDOC</label>
-						<input type="radio" id="radio-parfor" name="radioTipo"/><label for="radio-parfor">PARFOR</label>
-					</fieldset>
 					
-					<fieldset id="fieldset-campus">
-						<legend id="leg-campus">Campus</legend>
-						<input type="radio" id="c-bomj" name="campus"/><label for ="c-bomj">BOM JESUS</label>
-						<input type="radio" id="c-floriano" name="campus"/><label for ="c-floriano">FLORIANO</label>
-						<input type="radio" id="c-parnaiba" name="campus"/><label for ="c-parnaiba">PARNAIBA</label>
-						<input type="radio" id="c-picos" name="campus"/><label for ="c-picos">PICOS</label>
-						<input type="radio" id="c-teresina" name="campus"/><label for ="c-teresina">TERESINA</label>
 					
-					</fieldset>
+					<p>
+						<label id="label-campus">Campus</label>
+						<select id="s-campus" name="select-campus">
+							<option value="BOM JESUS">BOM JESUS</option>
+							<option value="FLORIANO">FLORIANO</option>
+							<option value="PARNAIBA">PARNAIBA</option>
+							<option value="PICOS">PICOS</option>
+							<option value="PICOS">TERESINA</option>
+						</select>
+					</p>
 					
 					<fieldset>
 						<legend id ="leg-event">Eventos</legend>
@@ -144,6 +167,9 @@
 				</fieldset>
 			
 				<input type="submit" value="Cadastrar" id="button"/>
+				<input type="submit" value="Sair" id="button-sair"/>
+				<br>
+				<br>
 				
 			</form>
 		</body>

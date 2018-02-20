@@ -6,15 +6,86 @@
 	  <title>Cadastro do restaurante</title>
 	  <style>
 	  
-		
+	  body{
+		background-color:#11a6ad;
+	  }
+	  form{
+		width:800px;
+		margin:auto;
+	  }
+	  legend{
+	  	padding: 15px;
+	  }
+	  #textIni{
+		text-align:center;
+		font:bold 20px sans-serif;
+	  }
+	  #button-sair{
+		  width:100px;
+		  border-radius:20px;
+		  font:bold 12px sans-serif;	
+		  border:1px solid #9eb9c3;
+		  color:"black";
+		  box-shadow:0px 0px 10px;
+		  margin-left: 300px;
+		  margin-top:20px;
+		  padding: 2px;
+		  background-color:gray;
+				}
+						
+						
+	  #button{
+		  float: right;
+		  width:100px;
+		  border-radius:20px;
+		  font:bold 12px sans-serif;	
+		  border:1px solid #9eb9c3;
+		  color:"black";
+		  box-shadow:0px 0px 10px;
+		  margin-right: 300px;
+		  margin-top: 20px;
+		  padding: 2px;
+		  background-color:gray;
+				}
+
+	  label{
+				display:inline-block;
+				font-size:0.9em;
+				font-weight:bold;
+				width:160px;
+					}			
+
+	  #input-acomp, #input-salada,#input-guarnicao,#input-prprincipal,#input-sobremesa,#input-suco,#select-campus,#select-dia{
+			display:inline-block;
+			width:300px;
+			background-color:"white";
+			height:26px;
+			margin: 14px auto 0px;
+			padding:3px;
+			border-radius:8px;
+			opacity:0.5;
+			}
+
+
+	  #button-sair:hover{
+				  background-color:lightgreen;
+				  cursor:pointer;
+							 }
+	  #button:hover{
+				  background-color:lightgreen;
+				  cursor:pointer;
+							 }
 		
 	  </style>
 	</head>
 	<body>
-		<p>
-			<label id="labelinicial">Cadastro do restaurante</label>
-		</p>
-		<form id ="form" method = "post" action="">
+	
+	<p id="textIni">Cadastro do  restaurante</p>
+	
+	<form id ="form" method = "post" action="">
+		<fieldset id="f-restaurante">
+			<legend id ="l-restaurante">Informações do restaurante</legend>
+	
 			
 			<p>
 				<label id="lcampus" for="select-campus">RU</label>
@@ -85,10 +156,13 @@
 				<input id="input-suco" name= "suco" type="text" placeholder="Suco de laranja">
 			</p>
 			
-			<input type="submit" value="Cadastrar" id="button"/>
 			
-			
-			
-		</form>
+	
+		</fieldset>
+	</form>
+
+	<input type="submit" value="Cadastrar" id="button"/>
+	<input type="submit" value="Sair" id="button-sair"/>
+
 	</body>
 	</html>
